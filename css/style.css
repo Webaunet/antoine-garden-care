@@ -214,5 +214,5 @@ h1+.lead,h2+.lead{margin-top:.9rem}
 @media(max-width:400px){.logo{font-size:1rem}.nav{gap:.4rem}}
 @media(max-width:700px){.cartes{grid-template-columns:1fr 1fr;gap:.8rem}.carte div{padding:.8rem .9rem 1rem}}
 @media(max-width:400px){.nav-cta{padding:.4rem .75rem}.burger{width:44px;height:44px}}
-@media(max-width:380px){.logo{font-size:.95rem}}
+@media(max-width:380px){.logo{font-size:1rem;letter-spacing:-.01em}.nav-cta{padding:.4rem .55rem}.nav{gap:.3rem}}
 @media(min-width:861px){.rang img{aspect-ratio:2.3/1}.rang{margin-top:1.6rem}.zig{padding:3rem 0}}
