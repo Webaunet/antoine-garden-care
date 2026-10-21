@@ -108,9 +108,9 @@ a:focus-visible,button:focus-visible{outline:3px solid #f0b27a;outline-offset:3p
 .contact .hero-actions{justify-content:center}
 
 /* footer */
-.site-footer{background:#14221a;color:#cdd8cf;padding:1.2rem 0;font-size:1rem}
+.site-footer{background:#14221a;color:#cdd8cf;padding:.3rem 0;font-size:1rem}
 .foot{display:flex;flex-wrap:wrap;gap:.8rem 2rem;align-items:center;justify-content:space-between}
-.foot a{text-decoration:none;display:inline-block;padding:.5rem 0}
+.foot a{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
 .foot a:hover{text-decoration:underline}
 .foot nav{display:flex;flex-wrap:wrap;gap:0 1.4rem}
 @media(max-width:700px){.hero::before{background:rgba(23,40,28,.78)}.hero .wrap{padding:3rem 0 6rem}}
@@ -145,7 +145,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #f0b27a;outline-offset:3p
 .grille6 img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .grille6 h3{position:absolute;left:0;right:0;bottom:0;padding:2rem 1rem .8rem;color:#fff;background:linear-gradient(transparent,rgba(20,34,26,.85))}
 @media(max-width:860px){.grille6{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.grille6{grid-template-columns:1fr}}
 .bandeau{background:var(--terre);color:#fff;padding:4rem 0;text-align:center;border-radius:48px 48px 0 0}
 .bandeau.vert{background:var(--vert);border-radius:0}
 .bandeau p{margin:.8rem auto 1.6rem;max-width:52ch}
@@ -194,3 +193,23 @@ form .btn{justify-self:start}
 .legal .lead{margin-top:.8rem}
 .legal .fiche{margin-top:1rem}
 h1+.lead,h2+.lead{margin-top:.9rem}
+
+.p2{background:var(--sauge)}
+.p2 .groupe{margin-top:0}
+.duo,.trio{display:grid;gap:1.5rem;margin-top:2rem}
+.trio{grid-template-columns:repeat(3,1fr)}
+.trio article{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--ombre)}
+.trio img{width:100%;aspect-ratio:16/9;object-fit:cover}.trio div{padding:1.1rem 1.3rem 1.4rem}.trio p{color:var(--gris);margin-top:.4rem}
+.duo{grid-template-columns:1fr 1fr}
+.trio .duo{display:contents}
+@media(max-width:900px){.trio{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.trio{grid-template-columns:1fr}}
+/* hauteurs de section 90–120 % */
+.ph,.ap-head,.ap-etapes,.ap-id,.entretien,.plant,.zig,.legal{min-height:90vh;display:flex;align-items:center}
+.ph>.wrap,.ap-head>.wrap,.ap-etapes>.wrap,.ap-id>.wrap,.entretien>.wrap,.plant>.wrap,.zig>.wrap{width:min(1160px,100% - 40px)}
+.bandeau{min-height:60vh;display:flex;align-items:center;justify-content:center}
+.bandeau .wrap{width:min(1160px,100% - 40px)}
+.prestations{display:flex;align-items:center}
+.prestations>.wrap{width:min(1160px,100% - 40px)}
+@media(max-width:400px){.logo{font-size:1rem}.nav{gap:.4rem}}
+@media(max-width:700px){.cartes{grid-template-columns:1fr 1fr;gap:.8rem}.carte div{padding:.8rem .9rem 1rem}}
