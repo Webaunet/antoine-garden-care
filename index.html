@@ -15,19 +15,12 @@
 <body>
 <header class="site-header" id="accueil">
   <div class="wrap nav">
-    <a class="logo" href="#accueil" aria-label="Antoine Garden Care, accueil">Antoine Garden Care<small>Paysagiste · Chatou</small></a>
-    <a class="btn btn-terre nav-cta" href="tel:+33635270651">06 35 27 06 51</a>
+    <a class="logo" href="https://webaunet.github.io/antoine-garden-care/" aria-label="Antoine Garden Care, accueil">Antoine Garden Care</a>
+    <a class="btn btn-terre nav-cta" href="tel:+33635270651" aria-label="Appeler le 06 35 27 06 51"><span class="t-long">06 35 27 06 51</span><span class="t-court">Appeler</span></a>
     <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
-    <ul class="menu" id="menu">
-      <li><a href="#accueil" aria-current="page">Accueil</a></li>
-      <li><a href="#prestations">Prestations</a></li>
-      <li><a href="#methode">Notre méthode</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <ul class="menu" id="menu"><li><a href="index.html" aria-current="page">Accueil</a></li><li><a href="prestations.html">Prestations</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul>
   </div>
 </header>
-
 <main>
 <section class="hero" aria-labelledby="titre-hero">
   <img src="images/hero-allee-paves.jpg" width="1400" height="764" alt="Allée de dalles de pierre bordée d'un muret et de massifs fleuris, menant à une maison en pierre">
@@ -36,7 +29,7 @@
     <h1 id="titre-hero">Des jardins pensés pour vivre dehors, entretenus avec soin.</h1>
     <p>Antoine Garden Care aménage et entretient les jardins de Chatou et de ses environs. Parlez-nous de votre projet, nous revenons vers vous.</p>
     <div class="hero-actions">
-      <a class="btn btn-terre" href="#contact">Parler de mon jardin</a>
+      <a class="btn btn-terre" href="contact.html">Parler de mon jardin</a>
       <a class="btn btn-contour" href="#prestations">Voir les prestations</a>
     </div>
   </div>
@@ -115,22 +108,12 @@
   </div>
 </section>
 </main>
-
 <footer class="site-footer">
   <div class="wrap foot">
     <span>© Antoine Garden Care · 40 rue des Vignobles, 78400 Chatou · <a href="tel:+33635270651">06 35 27 06 51</a></span>
-    <nav aria-label="Pied de page"><a href="#prestations">Prestations</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Pied de page"><a href="prestations.html">Prestations</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a></nav>
   </div>
 </footer>
-
-<script>
-(function(){
-  var b=document.querySelector('.burger'),m=document.getElementById('menu');
-  function set(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu')}
-  b.addEventListener('click',function(){set(!m.classList.contains('open'))});
-  m.addEventListener('click',function(e){if(e.target.tagName==='A')set(false)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
-})();
-</script>
+<script src="js/site.js"></script>
 </body>
 </html>
